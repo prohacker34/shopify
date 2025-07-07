@@ -28,10 +28,17 @@
 
     <section id='sell'>
         <h2>Sell an Item</h2>
-        <form id='sell-form'>
-            <input type='text' id='sell-name' placeholder='Item name' required/>
-            <input type='text' id='sell-price' placeholder='price'required>
-            <button type='submit'>Add Item</button>
+        <form id="sell-form">
+
+                <label for="sell-name">Product Name:</label><br>
+                <input type="text" id="sell-name" required><br>
+                <label for="sell-price">Price ($):</label><br>
+                <input type="number" id="sell-price" step="0.01" min="0" required><br>
+                <label for="sell-image">Image URL:</label><br>
+                <input type="text" id="sell-image" placeholder="(optional)"><br>
+
+
+            <button type="submit">Add Product</button>
         </form>
     </section>
     <section id='about'>
