@@ -70,12 +70,12 @@ h2{
     padding-bottom: 0.5rem;
 }
 #product-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-        justify-content: space-evenly; /* or space-around, space-between */
-        gap: 20px; /* Space between items */
-        padding: 20px
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+gap: 20px;
+padding: 20px
 }
 #product-list > div{
 border: 1px solid #ddd;
