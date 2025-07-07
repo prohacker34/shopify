@@ -35,13 +35,13 @@ function renderCart() {
     cart.forEach((item, index) => {
         total += item.price
         const li = document.createElement('li')
-        li.innerHTML = `${item.name} - $${item.price} <button onclick='removeFromCart(${index})'>Remove</button>`
+        li.innerHTML = `${item.name} - $${item.price} <button class=remove-item onclick='removeFromCart(${index})'>Remove</button>`
         cartItems.appendChild(li)
     })
     cartTotal.textContent = total
 }
 
-function addToCart(index) {  
+function addToCart(index) {
     cart.push(products[index])
     renderCart()
 }
